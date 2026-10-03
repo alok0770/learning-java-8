@@ -1,8 +1,8 @@
 package lambda;
 
-
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 
 public class LambdaComparatorDemo {
     public static void main(String[] args) {
@@ -15,8 +15,14 @@ public class LambdaComparatorDemo {
         list.add(56);
         list.add(12);
 
-        Collections.sort(list);
-        System.out.println(list);
+        System.out.println("before sorting : " + list);
 
+        Comparator<Integer> dsecOrder = (o1 , o2) -> (o2 - o1);
+        list.sort(dsecOrder);
+        System.out.println("After sorting : " + list);
     }
 }
+
+
+
+
