@@ -1,4 +1,4 @@
-package lambda;
+package function;
 
 
 import java.util.ArrayList;

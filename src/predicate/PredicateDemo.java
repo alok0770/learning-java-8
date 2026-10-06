@@ -1,4 +1,4 @@
-package lambda;
+package predicate;
 
 import java.util.Scanner;
 import java.util.function.Predicate;
