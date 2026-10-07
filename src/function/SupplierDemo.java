@@ -10,7 +10,7 @@ public class SupplierDemo {
 
         // 1. 4-Digit OTP Generator Supplier
         Supplier<Integer> otpSupplier = () -> {
-            int otp = (int) (Math.random() * 9000) + 1000;
+            int otp = (int) (Math.random() * 5000) + 1000;
             return otp;
         };
 
